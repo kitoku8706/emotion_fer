@@ -2,7 +2,6 @@
 
 tensorflow
 numpy
-
 pillow
 streamlit
 matplotlib
