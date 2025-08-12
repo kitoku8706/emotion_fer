@@ -29,12 +29,13 @@ def predict_face_rgb(rgb):
     idx = int(prob.argmax())
     return CLASSES[idx], float(prob[idx]), prob
 
-def draw_boxes(bgr, labels):
+def draw_boxes(bgr,  labels):
     for (x,y,w,h,lab,conf) in labels:
         cv2.rectangle(bgr, (x,y), (x+w,y+h), (0,255,0), 2)
         cv2.putText(bgr, f"{lab} {conf:.2f}", (x, y-8),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,255,0), 2)
     return bgr
+
 
 st.title("😊 Facial Emotion Recognition (MobileNetV2)")
 st.caption("파일 업로드 또는 웹캠 촬영으로 감정을 분류합니다.")
