@@ -2,7 +2,7 @@
 
 tensorflow
 numpy
-opencv-python
+
 pillow
 streamlit
 matplotlib
