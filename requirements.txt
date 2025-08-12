@@ -7,3 +7,4 @@ pillow
 streamlit
 matplotlib
 scikit-learn
+opencv-python-headless
